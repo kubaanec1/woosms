@@ -8,6 +8,7 @@ namespace BulkGate\WooSms\Event;
  */
 
 use BulkGate\{Plugin\Event\Dispatcher, WooSms\DI\Factory, Plugin\Eshop\EshopSynchronizer, Plugin\Event\Asynchronous, Plugin\Settings\Settings, Plugin\Strict};
+use function esc_html__;
 
 class Cron
 {

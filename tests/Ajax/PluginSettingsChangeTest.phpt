@@ -55,6 +55,7 @@ class PluginSettingsChangeTest extends TestCase
 						],
 					],
 				],
+				'success' => ['saved'],
 		], $plugin_settings->run([
 			'dispatcher' => 'cron',
 			'synchronization' => 'all',

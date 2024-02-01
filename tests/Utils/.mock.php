@@ -25,3 +25,13 @@ function esc_url(string $url): string
 {
 	return "\$_{$url}_$";
 }
+
+function esc_html__(string $html): string
+{
+    return "{$html}";
+}
+
+function esc_attr__(string $attr): string
+{
+    return "{$attr}";
+}

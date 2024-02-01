@@ -50,6 +50,7 @@ class MetaTest extends TestCase
 		$settings->shouldReceive('load')->with('static:application_token')->once()->andReturn('token');
 
 		Assert::same([
+		    '<a href="$_admin://admin/admin.php?page=bulkgate#/dashboard_$">Settings</a>',
 			'<a href="$_admin://admin/tools.php?page=bulkgate-debug_$">Debug</a>',
 			'xxx' => '<a href="http://www.bulkgate.com/cs/">BulkGate</a>',
 		], Meta::settingsLink(['xxx' => '<a href="http://www.bulkgate.com/cs/">BulkGate</a>'], '/yyy/woosms-sms-module-for-woocommerce/woosms-sms-module-for-woocommerce.php'));

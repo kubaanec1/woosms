@@ -38,3 +38,8 @@ function wp_schedule_event($timestamp, $recurrence, $hook, $args = array(), $wp_
 {
 	$GLOBALS['cron_init'][] = [$recurrence, $hook, $args, $wp_error];
 }
+
+function esc_html__(string $html): string
+{
+    return "~{$html}~";
+}

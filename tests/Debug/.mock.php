@@ -19,3 +19,8 @@ function file_get_contents(string $filename)
 	}
 	return false;
 }
+
+function esc_html__(string $html): string
+{
+    return "{$html}";
+}
